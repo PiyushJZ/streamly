@@ -1,0 +1,38 @@
+{
+  "name": "@lib/cache",
+  "version": "1.0.0",
+  "description": "A simple in-memory cache for Node.js using Redis",
+  "author": "Piyush Jain <piyushjz0402@gmail.com>",
+  "homepage": "https://gitlab.com/piyushjz/streamly",
+  "license": "ISC",
+  "main": "lib/cache.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiyushJZ/streamly.git"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "ts-node __tests__/cache.test.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/PiyushJZ/streamly/issues"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "ioredis": "^5.6.1",
+    "@lib/config": "^1.0.0"
+  }
+}

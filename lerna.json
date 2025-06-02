@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "version": "independent",
+  "packages": [
+    "packages/*",
+    "apps/**"
+  ],
+  "npmClient": "npm",
+  "progress": true,
+  "parallel": true,
+  "ignore": "worker-service",
+  "hoist": "true"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@lib/queue",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Piyush Jain <piyushjz0402@gmail.com>",
+  "homepage": "https://gitlab.com/piyushjz/streamly",
+  "license": "ISC",
+  "main": "lib/index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiyushJZ/streamly.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@lib/queue.test.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/PiyushJZ/streamly/issues"
+  }
+}

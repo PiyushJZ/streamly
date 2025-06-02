@@ -1,0 +1,23 @@
+{
+  "name": "streamly",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/**"
+  ],
+  "devDependencies": {
+    "lerna": "^8.2.2",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "rimraf": "^6.0.1"
+  },
+  "scripts": {
+    "preinstall": "./scripts/preinstall.sh",
+    "format": "prettier .",
+    "dev": "npx lerna run start:dev",
+    "dev:ui": "npx lerna run start:dev --scope ui",
+    "dev:gate": "npx lerna run start:dev --scope gateway-service",
+    "dev:be": "npx lerna run start:dev --scope auth-service --scope gateway-service",
+    "build": "npx lerna run build"
+  }
+}
