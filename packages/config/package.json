@@ -1,0 +1,34 @@
+{
+  "name": "@lib/config",
+  "version": "1.0.0",
+  "description": "Common configs for reusable libraries",
+  "author": "Piyush Jain <piyushjz0402@gmail.com>",
+  "homepage": "https://gitlab.com/PiyushJZ/streamly#readme",
+  "license": "ISC",
+  "main": "lib/config.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/PiyushJZ/streamly.git"
+  },
+  "scripts": {},
+  "bugs": {
+    "url": "https://gitlab.com/PiyushJZ/streamly/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.33",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "zod": "^3.25.28"
+  }
+}

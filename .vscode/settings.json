@@ -1,0 +1,51 @@
+{
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "search.exclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "files.readonlyInclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "cSpell.words": [
+    "arktype",
+    "bitnami",
+    "chainguard",
+    "dexie",
+    "dotenvx",
+    "Español",
+    "flowbite",
+    "frameguard",
+    "hsts",
+    "htpasswd",
+    "Idioma",
+    "Inglés",
+    "Iniciar",
+    "Inicio",
+    "inversed",
+    "languagedetector",
+    "Lngs",
+    "localtest",
+    "mikro",
+    "Multiplatform",
+    "npmjs",
+    "nuxtjs",
+    "persistedstate",
+    "primeicons",
+    "primeui",
+    "primeuix",
+    "primevue",
+    "Registrarse",
+    "reka",
+    "rtime",
+    "sesión",
+    "shadcn",
+    "Simplecast",
+    "streamly",
+    "toastification",
+    "varbit",
+    "vueuse",
+    "zundo"
+  ]
+}

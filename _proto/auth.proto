@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package auth;
+
+service AuthService {
+  rpc Login(Credentials) returns (Tokens);
+  rpc Signup(User) returns (UserResponse);
+  rpc Logout(Token) returns (UserResponse);
+}
+
+message Empty {}
+
+message Credentials {
+  oneof identifier {
+    string email = 1;
+    string username = 2;
+  }
+  string password = 3;
+}
+
+message Token {
+  string accessToken = 1;
+  string sessionId = 2;
+  string userId = 3;
+}
+
+message Tokens {
+  string userId = 1;
+  string accessToken = 2;
+  string refreshToken = 3;
+  string sessionId = 4;
+}
+
+message User {
+  string email = 1;
+  string username = 2;
+  string password = 3;
+}
+
+message UserResponse {
+  string message = 1;
+  bool success = 2;
+}

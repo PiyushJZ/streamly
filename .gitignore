@@ -1,0 +1,12 @@
+node_modules/
+*/**/node_modules
+*.env
+*.env.*
+!*.env.example
+*.DS_Store
+*/**/temp
+*/**/tmp
+*/**/dist
+
+# All the sub-modules
+apps/

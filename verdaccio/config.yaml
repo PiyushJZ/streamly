@@ -1,0 +1,13 @@
+packages:
+  '@lib/*':
+    access: $all
+    publish: $authenticated
+    proxy: npmjs
+  '**':
+    access: $all
+    publish: $authenticated
+    proxy: npmjs
+auth:
+  htpasswd:
+    file: /verdaccio/conf/htpasswd
+    max_users: 1
