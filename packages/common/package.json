@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "Piyush Jain <piyushjz0402@gmail.com>",
-  "homepage": "https://gitlab.com/apps8180721/streamly#readme",
   "main": "dist/common.js",
+  "types": "dist/common.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -15,15 +15,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/apps8180721/streamly.git"
-  },
   "scripts": {
     "build": "tsc"
-  },
-  "bugs": {
-    "url": "https://gitlab.com/apps8180721/streamly/issues"
   },
   "devDependencies": {
     "@types/node": "^22.15.33",

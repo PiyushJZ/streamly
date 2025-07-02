@@ -1,12 +1,10 @@
-version: '3.8'
-
 name: streamly
 services:
   verdaccio:
     image: verdaccio/verdaccio:latest
     container_name: verdaccio
     ports:
-      - "4873:4873"
+      - 4873:4873
     volumes:
       - ./verdaccio/config.yaml:/config/config.yaml
       - ./verdaccio/htpasswd:/verdaccio/conf/htpasswd
@@ -14,8 +12,32 @@ services:
       - verdaccio_plugins:/verdaccio/plugins
       - verdaccio_logs:/verdaccio/logs
     restart: unless-stopped
+  postgres:
+    image: chainguard/postgres:latest
+    container_name: postgres
+    ports: 
+      - 5432:5432
+    volumes: 
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASS}
+    restart: always
+  redis:
+    image: chainguard/redis:latest
+    container_name: redis
+    ports: 
+      - 6379:6379
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    restart: always
 
 volumes:
   verdaccio_storage:
+    driver: local
   verdaccio_plugins:
+    driver: local
   verdaccio_logs:
+    driver: local
+  postgres_data:
+    driver: local

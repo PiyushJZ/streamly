@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Common utility packages",
   "author": "Piyush Jain <piyushjz0402@gmail.com>",
-  "homepage": "https://gitlab.com/piyushjz/streamly",
-  "license": "ISC",
   "main": "dist/utils.js",
+  "types": "dist/utils.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -16,15 +15,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PiyushJZ/streamly.git"
-  },
   "scripts": {
     "build": "tsc"
-  },
-  "bugs": {
-    "url": "https://github.com/PiyushJZ/streamly/issues"
   },
   "devDependencies": {
     "@types/node": "^22.15.33",
