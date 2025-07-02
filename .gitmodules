@@ -1,9 +1,12 @@
 [submodule "apps/ui"]
 	path = apps/ui
 	url = git@github.com:PiyushJZ/streamly-ui.git
+	branch = main
 [submodule "apps/server/gateway-service"]
 	path = apps/server/gateway-service
 	url = git@github.com:PiyushJZ/streamly-gateway-service.git
+	branch = main
 [submodule "apps/server/auth-service"]
 	path = apps/server/auth-service
 	url = git@github.com:PiyushJZ/streamly-auth-service.git
+	branch = main
