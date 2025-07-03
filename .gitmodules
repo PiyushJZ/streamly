@@ -10,3 +10,9 @@
 	path = apps/server/auth-service
 	url = git@github.com:PiyushJZ/streamly-auth-service.git
 	branch = main
+[submodule "git@github.com:PiyushJZ/streamly-auth-service.git"]
+	branch = main
+[submodule "git@github.com:PiyushJZ/streamly-gateway-service.git"]
+	branch = main
+[submodule "git@github.com:PiyushJZ/streamly-ui.git"]
+	branch = main
