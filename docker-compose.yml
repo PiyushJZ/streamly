@@ -6,7 +6,8 @@ services:
     ports:
       - 4873:4873
     networks:
-      - appnet
+      streamly-network:
+        ipv4_address: 172.21.0.2
     volumes:
       - ./verdaccio/config.yaml:/config/config.yaml
       - ./verdaccio/htpasswd:/verdaccio/conf/htpasswd
@@ -45,4 +46,7 @@ volumes:
     driver: local
 
 networks:
-  appnet:
+  streamly-network:
+    ipam:
+      config:
+        - subnet: 172.21.0.0/24
