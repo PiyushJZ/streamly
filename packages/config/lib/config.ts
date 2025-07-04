@@ -33,19 +33,7 @@ export const envSchema = z.object({
   NATS_URL: z.string().url().startsWith('nats://'),
   GRPC_GATEWAY_URL: z.string().url(),
   REDIS_HOST: z.string().optional(),
-  DB_URL: z.string().url().optional(),
-  DB_HOST: z.string(),
-  DB_PORT: z
-    .string()
-    .transform(Number)
-    .default('5432')
-    .refine(val => !isNaN(val), {
-      message: 'DB_PORT should be a valid number',
-    }),
-  DB_USER: z.string().min(1, 'DB_USER cannot be empty'),
-  DB_PASS: z.string().min(1, 'DB_PASS cannot be empty'),
-  DB_SCHEMA: z.string().min(1, 'DB_SCHEMA cannot be empty'),
-  DB_NAME_AUTH: z.string().min(1, 'DB_NAME_AUTH cannot be empty'),
+  DB_URL_AUTH: z.string().url().optional(),
   THROTTLE_TTL_LONG: z
     .string()
     .transform(Number)

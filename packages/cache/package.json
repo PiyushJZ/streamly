@@ -4,18 +4,20 @@
   "description": "A simple in-memory cache for Node.js using Redis",
   "author": "Piyush Jain <piyushjz0402@gmail.com>",
   "main": "dist/cache.js",
+  "types": "dist/cache.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "tsc -p",
+    "build": "tsc",
     "test": "ts-node __tests__/cache.test.ts"
   },
   "devDependencies": {

@@ -1,16 +1,18 @@
 {
   "name": "@lib/common",
   "version": "1.0.0",
-  "description": "> TODO: description",
+  "description": "Common DTOs and reusable interfaces and types",
   "author": "Piyush Jain <piyushjz0402@gmail.com>",
   "main": "dist/common.js",
   "types": "dist/common.d.ts",
   "directories": {
     "lib": "lib",
+    "dist": "dist",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "publishConfig": {
     "access": "public"

@@ -6,10 +6,12 @@
   "main": "dist/config.js",
   "types": "dist/config.d.ts",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "dist": "dist"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "publishConfig": {
     "access": "public"

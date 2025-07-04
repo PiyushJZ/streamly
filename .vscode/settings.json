@@ -9,6 +9,7 @@
     "**/routeTree.gen.ts": true
   },
   "cSpell.words": [
+    "appnet",
     "arktype",
     "bitnami",
     "chainguard",
@@ -25,6 +26,7 @@
     "Iniciar",
     "Inicio",
     "inversed",
+    "Kolkata",
     "languagedetector",
     "Lngs",
     "localtest",
@@ -45,9 +47,11 @@
     "shadcn",
     "Simplecast",
     "streamly",
+    "streamlydb",
     "tanstack",
     "toastification",
     "varbit",
+    "VITE",
     "vueuse",
     "zundo"
   ]

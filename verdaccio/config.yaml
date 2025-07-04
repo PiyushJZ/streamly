@@ -2,10 +2,7 @@ packages:
   '@lib/*':
     access: $all
     publish: $authenticated
-    proxy: npmjs
   '**':
-    access: $all
-    publish: $authenticated
     proxy: npmjs
 auth:
   htpasswd:

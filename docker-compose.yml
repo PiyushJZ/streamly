@@ -5,6 +5,8 @@ services:
     container_name: verdaccio
     ports:
       - 4873:4873
+    networks:
+      - appnet
     volumes:
       - ./verdaccio/config.yaml:/config/config.yaml
       - ./verdaccio/htpasswd:/verdaccio/conf/htpasswd
@@ -41,3 +43,6 @@ volumes:
     driver: local
   postgres_data:
     driver: local
+
+networks:
+  appnet:
